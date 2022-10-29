@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <link rel="bj" href="js/bj.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Black Jack at the Sails of Omura bay</title>
+
+
+    <!-- <script>
+
+        function R_Click() {
+
+            let janken = ['グー','チョキ','パー'];
+            let janken_r = Math.floor( Math.random() * 3);
+
+            let p_janken = ['グー','チョキ','パー'];
+            let p_janken_r = Math.floor( Math.random() * 3);
+
+                if(janken_r == p_janken_r){
+                    Result_end = "Draw";
+                } else if(p_janken_r == 0 && janken_r ==0){
+                    Result_end = "You Win!";
+                } else if(p_janken_r == 1 && janken_r ==1){
+                    Result_end = "You Win!";
+                } else if(p_janken_r == 2 && janken_r ==2){
+                    Result_end = "You Win!";
+                } else {
+                    Result_end = "You Lose..."
+                }
+
+                document.getElementById("Rejan1").innerHTML = "あなたは" + p_janken[p_janken_r] + "を出しました";
+                document.getElementById("Rejan2").innerHTML = "相手は" + janken[janken_r] + Result_end;
+            }
+
+            $("div")
+
+       </script> -->
+
+</head>
+
+<body>
+
+
+    <button id="btn">楽しくなるスイッチ</button>
+
+<!-- 
+            <button onclick="R_Click(0);">グー</button>
+            <button onclick="R_Click(1);">チョキ</button>
+            <button onclick="R_Click(2);">パー</button>
+            <br/>
+            <div id="Rejan1"></div>
+            <div id="Rejan2"></div> -->
+
+
+<div class="container">
+
+  <p>ディーラー</p>
+  <p id="dealer-result"></p>
+  <div id="dealer" class="stage">
+    <div id="p3" class="card-back"></div>
+    <div id="p4" class="card-front"></div>
+  </div>
+
+  <p>プレイヤー</p>
+  <p id="result"></p>
+  <div id="player" class="stage">
+    <div id="p1" class="card-front"></div>
+    <div id="p2" class="card-front"></div>
+  </div>
+
+  <div class="btn">
+    <input type="button" value="スタンド" id="stand">
+    <input type="button" value="ヒット" id="hit">
+  </div>
+
+</div>
+
+<script src="js/bj.js"></script>
+
+
+</body>
+
+</html>
